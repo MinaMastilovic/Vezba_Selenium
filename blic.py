@@ -52,6 +52,7 @@ class TestBlicRs(unittest.TestCase):
         self.driver.find_element_by_xpath("//nav[@class='menu__main']//a[contains(text(),'ena')]").click()
         assert "Itt will open Žena" not in self.driver.page_source
 
+
     def testTritacke(self):
         self.driver.get("https://www.blic.rs/")
         assert "Blic" in self.driver.title
