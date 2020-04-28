@@ -8,6 +8,7 @@ class TestBlicRs(unittest.TestCase):
     def setUp(self):
         self.driver= webdriver.Chrome(r"C:\Users\masti\OneDrive\Documents\Desktop\webdriver\chromedriver.exe")
         self.driver.maximize_window()
+        
 
     def testVesti (self):
         self.driver.get("https://www.blic.rs")
